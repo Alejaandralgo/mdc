@@ -14,7 +14,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #F4EDE0;
     min-height: 100vh;
-	animation: floatPage 6s ease-in-out infinite;
+    animation: floatPage 6s ease-in-out infinite;
+}
+.corner-img {
+    position: fixed;
+    top: 20px;
+    width: 100px;
+    height: auto;
+    z-index: 1000;
 }
 .invitation {
     text-align: center;
@@ -23,13 +30,34 @@ body {
     border-radius: 20px;
     background: linear-gradient(180deg, #0C0C0C 70%, #2B1E17);
     box-shadow: 0 0 30px rgba(197, 163, 101, 0.35), 0 0 60px rgba(197, 163, 101, 0.25), 0 0 90px rgba(197, 163, 101, 0.15);
+    position: relative;
+	animation: boxGlow 4s ease-in-out infinite;}
+	
+.invitation > .corner-img {
+    position: absolute !important;
+    top: 35px;
+    right: 35px;
+    height: auto;
+    z-index: 1;
+    animation: floatLogo 4s ease-in-out infinite;
+}
+@keyframes floatLogo {
+0% {
+transform: translateY(0);
+}
+50% {
+transform: translateY(-8px);
+}
+100% {
+transform: translateY(0);
+}
 }
 .invite {
     color: #C5A365;
     letter-spacing: 3px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
-	 animation: fadeInOut 4s ease-in-out infinite;
+    animation: fadeInOut 4s ease-in-out infinite;
 }
 .title {
     font-family: 'Cormorant Garamond', serif;
@@ -66,27 +94,28 @@ body {
 .last p {
     color: #C5A365;
 }
+.corner-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 130px;
+    height: auto;
+}
 </style>
 </head>
 <body>
-<wrapper class="invitation">
-<h3 class="invite">
-	You’re Invited&#33; 
-	</h3>
-<h1 class="title">
-	Brew &amp; Buzz</h1>
-<h2 class="event">
-	Grand Opening</h2>
-<p class="tagline">
-	Sip. Chill. Repeat.</p>
-<wrapper class="details">
-<p> Wynwood Food Truck Plaza</p>
-<p> Saturday, November 9 |  6 PM</p>
-	  </wrapper>
-<wrapper class="last">
-  <p>Enjoy signature espresso martinis, live music &amp; giveaways&#33; </p>
-</wrapper>
-	</wrapper>
-	</body>
-
+<div class="invitation"> <img src="cheers.png" alt="Brew & Buzz Logo" class="corner-img">
+  <h3 class="invite"> You’re Invited&#33; </h3>
+  <h1 class="title"> Brew &amp; Buzz</h1>
+  <h2 class="event"> Grand Opening</h2>
+  <p class="tagline"> Sip. Chill. Repeat.</p>
+  <div class="details">
+    <p> Wynwood Food Truck Plaza</p>
+    <p> Saturday, November 9 |  6 PM</p>
+  </div>
+  <div class="last">
+    <p>Enjoy signature espresso martinis, live music &amp; giveaways&#33; </p>
+  </div>
+</div>
+</body>
 </html>
