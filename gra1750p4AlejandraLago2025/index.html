@@ -15,6 +15,7 @@ body {
     color: #F4EDE0;
     min-height: 100vh;
     animation: floatPage 6s ease-in-out infinite;
+	 flex-direction: column; 
 }
 .corner-img {
     position: fixed;
@@ -31,7 +32,9 @@ body {
     background: linear-gradient(180deg, #0C0C0C 70%, #2B1E17);
     box-shadow: 0 0 30px rgba(197, 163, 101, 0.35), 0 0 60px rgba(197, 163, 101, 0.25), 0 0 90px rgba(197, 163, 101, 0.15);
     position: relative;
-	animation: boxGlow 4s ease-in-out infinite;}
+	animation: boxGlow 4s ease-in-out infinite;
+	width: 420px;
+	}
 	
 .invitation > .corner-img {
     position: absolute !important;
@@ -40,6 +43,7 @@ body {
     height: auto;
     z-index: 1;
     animation: floatLogo 4s ease-in-out infinite;
+	
 }
 @keyframes floatLogo {
 0% {
@@ -101,6 +105,23 @@ transform: translateY(0);
     width: 130px;
     height: auto;
 }
+        footer {
+  width: 100%;                     
+  text-align: center;               
+  color: #F4EDE0;                   
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 30px 20px 20px 20px;     
+  margin-top: 30px;                
+  background: transparent;         
+}
+
+footer p {
+  max-width: 600px;               
+  margin: 8px auto;         
+}
+
 </style>
 </head>
 <body>
@@ -117,5 +138,10 @@ transform: translateY(0);
     <p>Enjoy signature espresso martinis, live music &amp; giveaways&#33; </p>
   </div>
 </div>
+	 <footer>
+    <p class="footer">&copy;2025, Alejandra Lago.</p>
+    <p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+  </footer>
+	 
 </body>
 </html>
