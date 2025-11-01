@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Brew &amp; Buzz — Coffee by day. Buzz by night.</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body {
+  margin:0;
+  background-image: url("black.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#F4EDE0;
+  font-family:'Montserrat', sans-serif;
+  font-size:16px;
+  box-sizing:border-box;
+}
+img, .card { box-sizing:border-box; }
+.placeholder { box-sizing:content-box; }
+.wrapper {
+  width:700px;
+  display:block;
+  margin:auto;
+  padding:20px;
+}
+header {
+  background-color:#14110d;
+  padding:24px;
+  border:2px solid #3a2e28;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+}
+.brand {
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  font-weight:600;
+  color:#F4EDE0;
+  margin:0 0 6px 0;
+}
+.brand .brew { color:#6b4f3a; }
+.brand .buzz { color:#c7a17a; }
+.tagline {
+  color:#C5A365;
+  font-style:italic;
+  text-align:center;
+  margin:0;
+}
+nav {
+  margin:12px 0 0 0;
+  text-align:center;
+}
+nav a {
+  display:inline-block;
+  padding:8px 12px;
+  margin:6px;
+  border:1px solid #3a2e28;
+  border-radius:8px;
+  color:#c7a17a;
+  text-align:center;
+  background-color:#1b1715;
+  transition:.2s;
+}
+nav a:hover { transform:translate(0px, -2px); }
+main { margin:24px 0; }
+section { margin:0 0 24px 0; }
+.card {
+  background-color:#1b1715;
+  border:1px solid #3a2e28;
+  border-radius:12px;
+  padding:18px 16px;
+  box-shadow:0 6px 18px rgba(0,0,0,.3);
+}
+.card h2 {
+  font-family:'Playfair Display', serif;
+  font-size:24px;
+  font-weight:600;
+  color:#F4EDE0;
+  margin:0 0 10px 0;
+  text-align:left;
+}
+.card ul { margin:0 0 6px 18px; }
+.card li { margin:6px 0; }
+.placeholder {
+  width:100%;
+  height:180px;
+  margin:10px 0;
+  border:1px solid #3a2e28;
+  border-radius:10px;
+  background-image:url("placeholder.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+}
+.gradient-block {
+  width:100%;
+  height:160px;
+  margin:10px 0;
+  border:1px solid #3a2e28;
+  border-radius:10px;
+  background-image:linear-gradient(135deg, #3c2f2f, #6b4f3a, #c7a17a);
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.input, .textarea, .button {
+  width:100%;
+  display:block;
+  margin:8px 0;
+  padding:10px 12px;
+  border:1px solid #3a2e28;
+  border-radius:8px;
+  background-color:#161310;
+  color:#F4EDE0;
+  font-family:'Montserrat', sans-serif;
+  font-size:16px;
+}
+.textarea { height:110px; }
+.button {
+  background-color:#c7a17a;
+  color:#111;
+  font-weight:500;
+  text-align:center;
+  transition:.2s;
+}
+.button:hover { transform:scale(102%); }
+footer {
+  text-align:center;
+  color:#bda691;
+  font-size:13px;
+  padding:20px;
+  border-top:1px solid #3a2e28;
+  clear:both;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <h1 class="brand"><span class="brew">Brew</span> &amp; <span class="buzz">Buzz</span></h1>
+    <p class="tagline">Coffee by day. Buzz by night.</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#hours">Hours</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card" id="intro">
+      <h2>Welcome</h2>
+      <p>Handcrafted espresso, creamy lattes, and coffee-forward cocktails — all in one cozy stop.</p>
+    </section>
+    <section class="card" id="menu">
+      <h2>Menu</h2>
+      <h3 style="margin:6px 0; font-size:18px; font-weight:500; color:#c7a17a;">House Coffee</h3>
+      <ul>
+        <li>Espresso (double) — $3.50</li>
+        <li>Latte (oat or whole) — $4.75</li>
+        <li>Cold Brew (12-hour steep) — $4.25</li>
+      </ul>
+      <h3 style="margin:10px 0 6px 0; font-size:18px; font-weight:500; color:#c7a17a;">Boozy Coffee</h3>
+      <ul>
+        <li>Espresso Martini — $12</li>
+        <li>Irish Latte — $11</li>
+        <li>Mocha Rum — $10</li>
+      </ul>
+    </section>
+    <section class="card" id="hours">
+      <h2>Hours</h2>
+      <ul>
+        <li>Mon–Thu: 7 AM – 9 PM</li>
+        <li>Fri: 7 AM – 11 PM</li>
+        <li>Sat: 8 AM – 11 PM</li>
+        <li>Sun: 8 AM – 6 PM</li>
+      </ul>
+      <p style="color:#bda691; font-size:13px; margin:8px 0 0 0;">21+ for alcoholic beverages • Drink responsibly</p>
+    </section>
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p>Brew &amp; Buzz blends café comfort with cocktail flair — bold espresso in the day, coffee-forward cocktails at night.</p>
+    </section>
+    <section class="card" id="gallery">
+      <h2>Gallery</h2>
+		<img src= "croissants.png" alt="Powdered Croissant" style="width:100%; height:auto; margin:10px 0; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.25);">
+     <img src= "cafe.png" alt="Brew & Buzz Food Restaurant Cafe" style="width:100%; height:auto; margin:10px 0; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.25);">
+      <img src= "martini.png" alt="Espresso Martini" style="width:100%; height:auto; margin:10px 0; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,.25);">
+    </section>
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@brewandbuzz.test" style="color:#c7a17a;">hello@brewandbuzz.test</a></p>
+      <form action="mailto:hello@brewandbuzz.test" method="post" enctype="text/plain">
+        <input class="input" type="text" name="name" placeholder="Your name" />
+        <input class="input" type="email" name="email" placeholder="Your email" />
+        <textarea class="textarea" name="message" placeholder="Your message"></textarea>
+        <button class="button" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Brew &amp; Buzz • All rights reserved</p>
+  </footer>
+</div>
+</body>
+</html>
