@@ -70,7 +70,8 @@ h2 {
     margin-right: 20px;
     margin-bottom: 20px;
 }
-#side-video iframe {
+#side-video iframe,
+#side-video video {
     width: 260px;
     height: 150px;
     border: 2px solid #f2c14f;
@@ -84,11 +85,14 @@ h2 {
 #mymovie {
     display: block;
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
+    height: 500px;
     border: 4px solid #f2c14f;
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 0 12px #d9b75a;
+}
+
 }
 .highlight {
     color: #f2c14f;
@@ -107,39 +111,61 @@ footer {
 </style>
 </head>
 <body>
-<nav> <a href="#top">HOME</a> <a href="#about">ABOUT</a> <a href="#trailer">TRAILER</a> <a href="#contact">CONTACT</a> </nav>
+<nav>
+    <a href="#top">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#trailer">TRAILER</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
 <div id="wrapper">
-  <header id="top">
+<header id="top">
     <h1>ELVIS</h1>
     <div class="tagline">Austin Butler • The King Reborn</div>
-  </header>
-  <div id="content">
-    <div id="side-video">
-      <iframe
-                    src="https://www.youtube-nocookie.com/embed/KIsojttVj4o"
-                    title="Elvis Trailer"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen> </iframe>
-    </div>
-    <div id="main-info">
-      <h2 id="about">The King Returns</h2>
-      <p> This site celebrates the movie <span class="highlight">Elvis</span>, a dramatic, bold, and emotional
-        look at Elvis Presley’s rise to legend status. The warm gold tones, deep reds, and dark backgrounds on 
-        this page echo the movie’s stage lighting and classic poster style. </p>
-      <p> Austin Butler brings Elvis back to life with a performance full of energy, style, and heart.
-        The design here uses fun fonts, strong colors, and polished layout choices to match the movie’s 
-        dramatic and musical atmosphere. </p>
-    </div>
-    <h2 id="trailer">Watch the Trailer</h2>
-    <video id="mymovie" controls>
-      <source src="elvis-movie.mp4" type="video/mp4">
-      Your browser does not support the video tag. </video>
-    <p> Turn up the volume and enjoy the full trailer below. The music, costumes, and storytelling 
-      make this movie a true celebration of the King of Rock &amp;
-      Roll himself. </p>
-  </div>
-  <footer id="contact"> &copy; 2025 Alejandra Lago• This is a fictitious web page created solely for education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands or people is purely coincidental.</footer>
+</header>
+
+<div id="content">
+
+<div id="side-video">X
+    <video controls>
+        <source src="ELVIS-MOVIE-TRAILER.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div id="main-info">
+    <h2 id="about">The King Returns</h2>
+    <p>This site celebrates the movie <span class="highlight">Elvis</span>, a dramatic, bold, and emotional
+    look at Elvis Presley’s rise to legend status. The warm gold tones, deep reds, and dark backgrounds on 
+    this page echo the movie’s stage lighting and classic poster style.</p>
+
+    <p>Austin Butler brings Elvis back to life with a performance full of energy, style, and heart.
+    The design here uses fun fonts, strong colors, and polished layout choices to match the movie’s 
+    dramatic and musical atmosphere.</p>
+</div>
+
+<h2 id="trailer">Watch the Trailer</h2>
+
+<iframe 
+    id="mymovie"
+    src="https://www.youtube-nocookie.com/embed/KIsojttVj4o"
+    title="Elvis Trailer"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>Turn up the volume and enjoy the full trailer below. The music, costumes, and storytelling 
+make this movie a true celebration of the King of Rock &amp; Roll himself.</p>
+
+</div>
+
+<footer id="contact">
+&copy; 2025 Alejandra Lago • This is a fictitious web page created solely for education and training.
+All products and people associated with this web page are fictitious. Any resemblance to real brands 
+or people is purely coincidental.
+</footer>
+
 </div>
 </body>
 </html>
+
